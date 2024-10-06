@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 
 	// Run kernel with one thread for each element
 	// First value is number of blocks, second is threads per block.  Max 1024 threads per block
-	simple_multiply<<<100, 100>>>(buffer_C, 10, 10, 10, 10, buffer_A, buffer_B); 
+	simple_multiply<<<ELEMENTS / 100, 100>>>(buffer_C, 10, 10, 10, 10, buffer_A, buffer_B);
 
 	// Read output buffer back to the host
 	cudaMemcpy(&C[0], buffer_C, data_size, cudaMemcpyDeviceToHost);
