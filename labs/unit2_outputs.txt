@@ -1,13 +1,15 @@
 info_cuda:
 
 Number of devices: 1
-Device 0
-Name NVIDIA GeForce RTX 2050
-Revision 8.6
-Memory 4095MB
-Warp Size 32
-Clock 1155000
-Multiprocessors 16
+Device: 0
+Name: NVIDIA GeForce RTX 2050
+Revision: 8.6
+Memory: 4095MB
+Warp Size: 32
+Clock: 1155000
+Multiprocessors: 16
+Max Grid Size: 2147483647 x 65535 x 65535
+Max Threads Per Block: 1024
 
 vec-add-cuda:
 
